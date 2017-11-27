@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  clicked: boolean;
 
+  constructor(public navCtrl: NavController) {
+    this.clicked = false;
+  }
+
+  find() {
+    this.clicked = true;
   }
 
 }
