@@ -1,7 +1,8 @@
 
 <ion-content padding>
-  <div class="content">
+  <div class="content text">
     <h1 *ngIf="clicked">It's right here.</h1>
-    <button ion-button (click)="find()" *ngIf="!clicked">Find my phone!</button>
+    <h1 *ngIf="!clicked">Find my phone!</h1>
+    <button class="button" ion-button (click)="find()" *ngIf="!clicked">tap here</button>
   </div>
 </ion-content>

@@ -6,4 +6,20 @@ page-home {
     align-items: center;
     height: 100%;
   }
+
+  .button {
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid white;
+  }
+
+  .text {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
 }
