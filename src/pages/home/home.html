@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Find My Phone
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content padding>
   <div class="content">
-    <h1 *ngIf="clicked">It's Here!</h1>
-    <button ion-button (click)="find()" *ngIf="!clicked">Find!</button>
+    <h1 *ngIf="clicked">It's right here.</h1>
+    <button ion-button (click)="find()" *ngIf="!clicked">Find my phone!</button>
   </div>
 </ion-content>
