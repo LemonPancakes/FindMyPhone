@@ -14,7 +14,7 @@ export class HomePage {
   }
 
   find() {
-    this.clicked = true;
+    this.clicked = !this.clicked;
   }
 
 }
