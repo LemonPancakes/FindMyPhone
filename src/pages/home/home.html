@@ -1,6 +1,6 @@
 <ion-content padding>
   <div class="content text">
-    <h1 *ngIf="clicked" (click)="find()">It's right here.</h1>
+    <h1 *ngIf="clicked" (click)="reset()">It's right here.</h1>
     <h1 *ngIf="!clicked">Find my phone!</h1>
     <button class="button" ion-button (click)="find()" *ngIf="!clicked">tap here</button>
   </div>

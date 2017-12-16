@@ -13,6 +13,10 @@ export class HomePage {
     this.clicked = false;
   }
 
+  reset() {
+    this.clicked = false;
+  }
+
   find() {
     let loading = this.loadingCtrl.create({
       spinner: 'circles',
@@ -24,7 +28,7 @@ export class HomePage {
     loading.setCssClass('loading-dialog');
 
     loading.onDidDismiss(() => {
-      this.clicked = !this.clicked;
+      this.clicked = true;
     });
   }
 
