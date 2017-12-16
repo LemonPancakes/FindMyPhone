@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {LoadingController} from "ionic-angular";
 
 @Component({
   selector: 'page-home',
@@ -9,12 +9,23 @@ export class HomePage {
 
   clicked: boolean;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public loadingCtrl: LoadingController) {
     this.clicked = false;
   }
 
   find() {
-    this.clicked = !this.clicked;
+    let loading = this.loadingCtrl.create({
+      spinner: 'circles',
+      content: 'Locating...',
+      duration: 2000
+    });
+
+    loading.present();
+    loading.setCssClass('loading-dialog');
+
+    loading.onDidDismiss(() => {
+      this.clicked = !this.clicked;
+    });
   }
 
 }
