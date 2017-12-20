@@ -8,28 +8,24 @@ import {LoadingController} from "ionic-angular";
 export class HomePage {
 
   clicked: boolean;
+  searching: boolean;
+  test: boolean;
 
   constructor(public loadingCtrl: LoadingController) {
-    this.clicked = false;
+    this.reset();
   }
 
   reset() {
     this.clicked = false;
+    this.searching = false;
   }
 
   find() {
-    let loading = this.loadingCtrl.create({
-      spinner: 'circles',
-      content: 'Locating...',
-      duration: 2000
-    });
-
-    loading.present();
-    loading.setCssClass('loading-dialog');
-
-    loading.onDidDismiss(() => {
-      this.clicked = true;
-    });
+    this.searching = true;
+    this.clicked = true;
+    setTimeout(() => {
+      this.searching = false;
+    }, 2000);
   }
 
 }
