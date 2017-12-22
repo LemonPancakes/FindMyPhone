@@ -25,7 +25,7 @@ export class HomePage {
     this.clicked = true;
     setTimeout(() => {
       this.searching = false;
-    }, 2000);
+    }, 3000);
   }
 
 }
