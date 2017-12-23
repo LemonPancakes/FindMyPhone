@@ -3,7 +3,7 @@
     <h1 [class]="clicked ? 'fadeOut animated' : ''" *ngIf="!clicked && !searching">Find my phone!</h1>
     <button *ngIf="!clicked && !searching" class="button" ion-button (click)="find()">tap here</button>
 
-    <h1 *ngIf="searching">Searching...</h1>
+    <h1 *ngIf="searching">{{searchingText}}</h1>
     <img *ngIf="searching" class="loading-icon" src="../../assets/imgs/magnify.gif" />
 
     <h1 *ngIf="clicked && !searching" (click)="reset()">It's right here.</h1>
