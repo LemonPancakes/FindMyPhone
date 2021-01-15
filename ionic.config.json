@@ -1,8 +1,8 @@
 {
-  "name": "FindMyPhone",
-  "app_id": "8ecc28e2",
-  "type": "ionic-angular",
+  "name": "test",
   "integrations": {
-    "cordova": {}
-  }
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "2de1632d"
 }
