@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Find my phone!</string>
+    <string name="title_activity_main">Find my phone!</string>
+    <string name="package_name">com.lemon.pancakes</string>
+    <string name="custom_url_scheme">com.lemon.pancakes</string>
+</resources>
